@@ -136,14 +136,14 @@ export function VideoSection() {
         </div>
 
         {/* Watch button — hidden when playing */}
-        {!isPlaying ? (
+        {!isPlaying ?
           <button
             onClick={handleWatch}
-            className="mr-10 mt-2 cursor-pointer font-sans text-[24px] font-normal uppercase tracking-tight text-yellow-accent max-sm:text-[16px]"
+            className="mr-10 mt-2 cursor-pointer font-sans text-[24px] font-normal uppercase tracking-tight text-yellow-accent max-sm:text-[28px] max-sm:mt-0"
             style={{ letterSpacing: "-0.07em" }}>
             {t.video.watchVideo}
           </button>
-        ) : null}
+        : null}
       </div>
 
       {/* Controls bar — visible when playing */}
